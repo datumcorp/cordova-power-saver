@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-power-saver" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>PowerSaver</name>
+
+    <description>Android Power Saver Plugin</description>
+    <license>MIT</license>
+    <keywords>android, power, battery</keywords>
+    <js-module name="PowerSaver" src="www/PowerSaver.js">
+        <clobbers target="PowerSaver" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="PowerSaver">
+                <param name="android-package" value="com.vukstankovic.PowerSaver" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+        <source-file src="src/android/PowerSaver.java" target-dir="src/com/vukstankovic/PowerSaver" />
+    </platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="PowerSaver"><param name="ios-package" value="PowerSaver" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/PowerSaver.m" />
+    </platform>
+</plugin>

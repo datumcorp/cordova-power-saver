@@ -1,0 +1,19 @@
+{
+  "name": "cordova-power-saver",
+  "version": "1.0.0",
+  "description": "Check if power saver mode is enabled",
+  "cordova": {
+    "id": "cordova-power-saver",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Vuk Stankovic",
+  "license": "MIT"
+}
