@@ -15,3 +15,7 @@ Cordova Power Saver plugin is a small plugin that allows applications to check i
 
 * Android (5+)
 * iOS
+
+## Warning 
+
+This plugin is still being tested so please don't use it just yet
