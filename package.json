@@ -1,6 +1,6 @@
 {
   "name": "cordova-power-saver",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Check if power saver mode is enabled",
   "cordova": {
     "id": "cordova-power-saver",
