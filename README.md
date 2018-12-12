@@ -5,9 +5,10 @@ Cordova Power Saver plugin is a small plugin that allows applications to check i
 ## Usage
 
 ```
-    PowerSaver.isPowerSaverEnabled({}, function (isActive) {
-        console.log('Power saver is active:', isActive);
-    });
+    PowerSaver.isPowerSaverEnabled()
+        .then((isActive) => {
+            console.log('Power saving mode is active', isActive);
+        });
 ```
 
 ## Platforms
