@@ -1,6 +1,6 @@
 {
   "name": "cordova-power-saver",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Check if power saver mode is enabled",
   "cordova": {
     "id": "cordova-power-saver",
@@ -8,6 +8,10 @@
       "android",
       "ios"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vuk/cordova-power-saver"
   },
   "keywords": [
     "ecosystem:cordova",
