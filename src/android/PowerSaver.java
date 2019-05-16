@@ -2,6 +2,7 @@ package com.vukstankovic;
 
 import android.content.Context;
 import android.os.PowerManager;
+import android.provider.Settings;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
@@ -27,7 +28,8 @@ public class PowerSaver extends CordovaPlugin {
 
     private void isPowerSaverEnabled(String message, CallbackContext callbackContext) {
         PowerManager powerManager = (PowerManager) this.cordova.getActivity().getSystemService(Context.POWER_SERVICE);
-        if ( powerManager.isPowerSaveMode()) {
+        final String result = Settings.System.getString(getContentResolver(), "psm_switch");
+        if ( powerManager.isPowerSaveMode() || result.equals("1")) {
             callbackContext.success('1');
         } else {
             callbackContext.success('0');
